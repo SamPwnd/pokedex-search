@@ -1,0 +1,66 @@
+body{
+    width: 100%;
+    max-height: 100%;
+    background-color: #313131;
+    color: white;
+}
+
+.conteiner-principale{
+    display: flex;
+    flex-direction: column;
+    margin: 20%;
+    align-items: center;
+}
+
+.class-form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: solid 1px white;
+    padding: 8px;
+    width: 40%;
+    gap: 8px;
+    border-radius: 5px;
+}
+
+.class-form > button {
+    background-color: orange;
+    color: white;
+    border-color: orange;
+}
+
+.conteiner-result {
+    border: solid 1px white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.inv {
+    visibility: hidden;
+}
+
+.vis {
+    visibility: visible;
+}
+
+#lista-pokemon{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+#lista-pokemon>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 25px;
+}
+#lista-pokemon>div>p{
+    text-transform: capitalize;
+}
