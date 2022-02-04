@@ -40,11 +40,11 @@ body{
 }
 
 .inv {
-    visibility: hidden;
+    display: none;
 }
 
 .vis {
-    visibility: visible;
+    display: initial;
 }
 
 #lista-pokemon{
