@@ -3,7 +3,7 @@ const errP = document.querySelector('#errore');
 btnEl.addEventListener('click', async () => {
     try{
         event.preventDefault()
-        let nomePokemon = document.querySelector('#pingopallino');
+        let nomePokemon = document.querySelector('#input-text');
         let x = await fetch("https://pokeapi.co/api/v2/pokemon/" + nomePokemon.value.toLowerCase())
         let pokemon = await x.json()
         let lista = document.querySelector('#lista-pokemon');
@@ -27,8 +27,3 @@ btnEl.addEventListener('click', async () => {
 })
 
 
-// async function facose(){
-//     let nomePokemon = document.querySelector('#pingopallino');
-//     let x = await fetch("https://pokeapi.co/api/v2/pokemon/"+nomePokemon.value)
-//     console.log(x)
-// }
